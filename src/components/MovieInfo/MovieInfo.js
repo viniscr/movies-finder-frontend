@@ -4,7 +4,7 @@ import "./MovieInfo.css"
 import notFound from '../../assets/image-not-found.png'
 
 const MovieInfo = (props) => {
-    
+
     return (
         <div className="container">
             <div className="row go-back" onClick={props.closeMovieInfo}>
@@ -13,9 +13,9 @@ const MovieInfo = (props) => {
             </div>
             <div className="row">
                 <div className="col s12 m4">
-                    { props.currentMovie.poster_path == null ? <img className="card-image" src={notFound} alt="card" /> :
+                    {props.currentMovie.poster_path == null ? <img className="card-image" src={notFound} alt="card" /> :
                         <img className="card-image" src={`http://image.tmdb.org/t/p/w500${props.currentMovie.poster_path}`} alt="card" />
-                    }           
+                    }
                 </div>
 
                 <div className="col s12 m8">
@@ -27,11 +27,11 @@ const MovieInfo = (props) => {
                         <strong>Overview</strong>
                         <p>{props.currentMovie.overview}</p>
                         <strong>Release Date</strong>
-                        <p>{props.currentMovie.release_date.substring(5).split("-").concat(props.currentMovie.release_date.substring(0,4)).join('/')}</p>
+                        <p>{props.currentMovie.release_date.substring(5).split("-").concat(props.currentMovie.release_date.substring(0, 4)).join('/')}</p>
                     </div>
                 </div>
             </div>
-        
+
         </div>
     )
 }

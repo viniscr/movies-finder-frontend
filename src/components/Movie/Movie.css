@@ -1,4 +1,4 @@
-.card-image img{
+.card-image img {
     width: 100%;
     height: 360px;
 }
@@ -7,11 +7,11 @@
     height: 130px;
 }
 
-.card-content strong{
+.card-content strong {
     font-size: 14px;
 }
 
-.card-content p{
+.card-content p {
     font-size: 13px;
     
 }
