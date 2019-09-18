@@ -1,7 +1,7 @@
 
 export default async ({ url, ...options }) => {
 	try {
-		let apiUrl = `https://movies-finder-backend.herokuapp.com/movies`;
+		let apiUrl = `http://movies-finder-backend.herokuapp.com/movies`;
 
 		const response = await fetch(`${apiUrl}${url}`, {
 			headers: {
@@ -13,7 +13,7 @@ export default async ({ url, ...options }) => {
 
 		return await response.json();
 	} catch (error) {
-		window.alert('Alguem erro aconteceu. Tente novamente, por favor.')
+		window.alert('Erro! Tente novamente.')
 	}
 };
 
