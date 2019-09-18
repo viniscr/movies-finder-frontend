@@ -1,5 +1,8 @@
+
 export const checkLocalStorageGenres = (key, defaultValue) => {
-    const ls = localStorage.getItem(`${key}`) ? JSON.parse(localStorage.getItem(`${key}`)) || "" : defaultValue;
+    const ls = localStorage.getItem(`${key}`) ?
+     JSON.parse(localStorage.getItem(`${key}`)) || "" 
+     : defaultValue;
 
     return ls;
 }
