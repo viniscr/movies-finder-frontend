@@ -1,7 +1,7 @@
 
 export default async ({ url, ...options }) => {
 	try {
-		let apiUrl = `http://movies-finder-backend.herokuapp.com/movies`;
+		let apiUrl = `https://movies-finder-backend.herokuapp.com/movies`;
 
 		const response = await fetch(`${apiUrl}${url}`, {
 			headers: {
