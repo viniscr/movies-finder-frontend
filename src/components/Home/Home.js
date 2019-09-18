@@ -23,7 +23,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.loadMovies();
+    this.loadMovies(this.state.currentPage);
   }
 
   loadMovies = async (page) => {
