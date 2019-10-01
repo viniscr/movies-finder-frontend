@@ -1,0 +1,17 @@
+.card-image img {
+    width: 100%;
+    height: 360px;
+}
+
+.card-content {
+    height: 130px;
+}
+
+.card-content strong {
+    font-size: 14px;
+}
+
+.card-content p {
+    font-size: 13px;
+    
+}
