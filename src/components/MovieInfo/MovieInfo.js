@@ -1,5 +1,5 @@
 import React from 'react';
-import "./MovieInfo.css"
+import "./MovieInfo.scss"
 
 import notFound from '../../assets/image-not-found.png'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Movie.css';
+import './Movie.scss';
 
 import notfound from '../../assets/image-not-found.png'
 
@@ -8,7 +8,7 @@ const Movie = (props) => {
         <div className="col s12 m6 l3">
             <div className="card">
                 <div className="card-image">
-                    <a className="btn-floating halfway-fab waves-effect waves-light red" href="#" onClick={() => props.viewMovieInfo(props.movieId)}><i className="material-icons">add</i></a>
+                    <button className="btn-floating halfway-fab waves-effect waves-light red" href="#" onClick={() => props.viewMovieInfo(props.movieId)}><i className="material-icons">add</i></button>
                     {
                         props.image == null ?
                             <img src={notfound} alt="card" /> :

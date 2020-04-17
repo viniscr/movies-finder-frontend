@@ -6,7 +6,7 @@ export const upComingMovies = async page => {
     try {
         let storedGenres = checkLocalStorageGenres('genres', null)
 
-        if (isEmpty(storedGenres) || storedGenres == undefined) {
+        if (isEmpty(storedGenres) || storedGenres === undefined) {
             storedGenres = await getGenres()
             localStorage.setItem('genres', JSON.stringify(storedGenres))
         }

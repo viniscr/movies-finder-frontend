@@ -1,6 +1,6 @@
 import React from 'react';
 import Movie from '../Movie/Movie';
-import "./MovieList.css"
+import "./MovieList.scss"
 
 const MovieList = (props) => {
 
